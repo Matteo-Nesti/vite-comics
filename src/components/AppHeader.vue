@@ -99,13 +99,14 @@ ul {
             font-weight: 600;
             text-transform: uppercase;
             font-size: 0.9rem;
-            padding-bottom: 37px;
+            padding-bottom: 36px;
         }
     }
 }
 
-.active {
+a:hover,
+a.active {
     color: #0282f9;
-    border-bottom: 3px solid #0282f9;
+    border-bottom: 4px solid #0282f9;
 }
 </style>

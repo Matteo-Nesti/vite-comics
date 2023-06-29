@@ -1,10 +1,11 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
+import AppFooter from './components/AppFooter.vue'
 import AppUtilityLink from './components/AppUtilityLink.vue'
 
 export default {
-    components: { AppHeader, AppMain, AppUtilityLink },
+    components: { AppHeader, AppMain, AppUtilityLink, AppFooter },
     data() {
         return {
 
@@ -17,6 +18,7 @@ export default {
     <AppHeader />
     <AppMain />
     <AppUtilityLink />
+    <AppFooter />
 </template>
 
 <style lang="scss">
