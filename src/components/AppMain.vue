@@ -47,7 +47,6 @@ main {
 #jumbo {
     img {
         width: 100%;
-
     }
 
     .jumbo-btn {
@@ -56,28 +55,31 @@ main {
         font-size: 1.3rem;
         padding: 10px 20px;
         position: relative;
-        bottom: 20px;
+        bottom: 35px;
+
     }
+
 }
 
 .btn-main {
     display: flex;
     justify-content: center;
 
-    a {
-        color: #FFF;
-        font-weight: bold;
-        background-color: #0282f9;
-        padding: .7rem 1.8rem;
-        display: inline-block;
-        margin: 10px auto;
-        cursor: pointer;
-        transition: .3s;
-    }
+}
 
-    a:hover {
+a {
+    color: #FFF;
+    font-weight: bold;
+    background-color: #0282f9;
+    padding: .7rem 1.8rem;
+    display: inline-block;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: .3s;
+}
 
-        scale: 1.1;
-    }
+a:hover {
+
+    scale: 1.1;
 }
 </style>

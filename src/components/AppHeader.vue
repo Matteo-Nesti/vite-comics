@@ -58,6 +58,13 @@ export default {
         }
 
     },
+    methods: {
+        getActive(clickedLink) {
+            this.links.forEach(link => {
+                link.current = (link === clickedLink)
+            });
+        }
+    }
 
 }
 </script>
@@ -70,7 +77,7 @@ export default {
         <nav>
             <ul>
                 <li v-for="link in links">
-                    <a :href="link.url" :key="link.text" :class="{ active: link.current }">{{ link.text }}</a>
+                    <a :href="link.url" :key="link.text" :class="{ current: link.current }" @click="getActive(link)">{{ link.text }}</a>
                 </li>
             </ul>
         </nav>
@@ -106,7 +113,7 @@ ul {
 }
 
 a:hover,
-a.active {
+a.current {
     color: #0282f9;
     border-bottom: 4px solid #0282f9;
 }
