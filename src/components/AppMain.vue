@@ -18,6 +18,9 @@ export default {
     <main>
         <section id="jumbo">
             <img src="https://static.dc.com/2023-06/DC.com_20230629_HL_ComingOut_Marquee_3x1_.jpg?w=1200" alt="Losing the Mask: Five Comic Book Coming Out Stories">
+            <div class="container">
+                <a href="#" class="jumbo-btn">current Series</a>
+            </div>
         </section>
         <section id="mainContent" class="container">
             <AppCards :mainCards="mainCards" />
@@ -45,6 +48,15 @@ main {
     img {
         width: 100%;
 
+    }
+
+    .jumbo-btn {
+        color: #FFF;
+        background-color: #0282f9;
+        font-size: 1.3rem;
+        padding: 10px 20px;
+        position: relative;
+        bottom: 20px;
     }
 }
 
