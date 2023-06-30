@@ -189,6 +189,10 @@ footer {
         font-size: .8rem;
     }
 
+    a:hover {
+        color: lightgrey;
+    }
+
 
 }
 
@@ -200,10 +204,12 @@ footer {
         color: #fff;
         padding: 10px 20px;
         border: 2px solid#0282f9;
+        transition: .3s;
     }
 
     a.btn:hover {
         background-color: #0282f9;
+        scale: 1.1;
     }
 
     h4 {
